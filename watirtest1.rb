@@ -4,7 +4,7 @@ def open_page
   puts "abc"
   browser=Watir::Browser.new :ff
   browser.goto("google.com")
-  browser.text_field(:name=>"q").set("San Francisco")
+  browser.text_field(:name,"q").set("San Francisco")
   browser.send_keys :return
   browser.close
 end
